@@ -1,6 +1,6 @@
 int leftMotorForward = 13;
 int leftMotorBackward = 12;
-int rightMotorForward;
+int rightMotorForward = 11;
 int rightMotorBackward;
 int LEDpin;
 int switchPin;
@@ -21,13 +21,13 @@ void setup() {
 }
 
 void loop() {
-  if (analogRead(ultraPin1) <  500){
-    if (analogRead(ultraPin2) <  100) {
-      // chomp();
-    }
-  } else {
+ // if (analogRead(ultraPin1) <  500){
+ //   if (analogRead(ultraPin2) <  100) {
+   //   // chomp();
+  //  }
+  //} else {
     moveFunc();
-  }
+ // }
 }
  
 void moveFunc() {
